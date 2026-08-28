@@ -498,6 +498,79 @@ footer{font-size:10px}
 }
 </style>
 
+
+<style>
+/* CORREÇÃO DO CARROSSEL MOBILE — sobrescreve estilos antigos da trustGrid */
+@media(max-width:700px){
+  .trust{
+    padding:0 !important;
+    overflow:hidden !important;
+  }
+  .trust .wrap{
+    width:100% !important;
+    max-width:none !important;
+    padding:0 !important;
+    margin:0 !important;
+  }
+  .trustGrid{
+    display:block !important;
+    width:100% !important;
+    overflow:hidden !important;
+    padding:0 !important;
+    margin:0 !important;
+  }
+  .trustGrid .trust-track{
+    display:flex !important;
+    flex-direction:row !important;
+    align-items:center !important;
+    flex-wrap:nowrap !important;
+    width:max-content !important;
+    gap:0 !important;
+    animation:trustSlideFixed 20s linear infinite !important;
+  }
+  .trustGrid .trust-item{
+    display:flex !important;
+    flex-direction:row !important;
+    align-items:center !important;
+    justify-content:center !important;
+    gap:10px !important;
+    width:320px !important;
+    min-width:320px !important;
+    height:72px !important;
+    padding:0 22px !important;
+    margin:0 !important;
+    border:0 !important;
+    border-right:1px solid rgba(255,255,255,.14) !important;
+    box-sizing:border-box !important;
+    white-space:nowrap !important;
+  }
+  .trustGrid .trust-icon{
+    display:block !important;
+    width:20px !important;
+    min-width:20px !important;
+    height:20px !important;
+    color:#e7c6a0 !important;
+  }
+  .trustGrid .trust-icon svg{
+    display:block !important;
+    width:20px !important;
+    height:20px !important;
+  }
+  .trustGrid .trust-text{
+    display:block !important;
+    font-size:11px !important;
+    line-height:1.2 !important;
+    font-weight:650 !important;
+    text-align:left !important;
+    color:#fff !important;
+  }
+  @keyframes trustSlideFixed{
+    from{transform:translate3d(0,0,0)}
+    to{transform:translate3d(-1280px,0,0)}
+  }
+}
+</style>
+
 </head>
 <body>
 <header><div class="wrap nav"><div class="brand"><div class="monogram">GS</div><div><strong>GLENDA SANTOS</strong><small>ESTRATÉGIA PATRIMONIAL</small></div></div><nav class="navlinks"><a href="#objetivos">Objetivos</a><a href="#empresas">Empresas</a><a href="#sobre">Glenda</a><a href="#simulacao">Simulação</a>
